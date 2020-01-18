@@ -1,44 +1,26 @@
-public class Prime {
-    public static void main(String[] args) {
-        int num = 29;
-        boolean flag = false;
-        for(int i = 2; i <= num/2; ++i)
-        {
-            // condition for nonprime number
-            if(num % i == 0)
-            {
-                flag = true;
-                break;
-            }
+
+
+/*Primitive types - There are more
+Int = integer   -  int a = 5;
+char = character = char b = ‘i”;
+long = 
+doubt=
+
+
+Non Primitive types
+
+String  -  String name = “Matt”;
+System.out.println(name.toUpperCase());
+
+*/
+public class LearnJava {
+
+        public static void main(String[] args) {
+            addExclamationPoint("hot dogs");
         }
-        if (!flag)
-            System.out.println(num + " is a prime number.");
-        else
-            System.out.println(num + " is not a prime number.");
-    }
+        public static void addExclamationPoint(String s) {
+            System.out.println(s + "!");
+        }
 }
 
 
-/* CallingMethodsInSameClass.java
- *
- * illustrates how to call static methods a class
- * from a method in the same class
- */
-
-public class CallingMethodsInSameClass
-{
-	public static void main(String[] args) {
-		printOne();
-		printOne();
-		printTwo();
-	}
-
-	public static void printOne() {
-		System.out.println("Hello World");
-	}
-
-	public static void printTwo() {
-		printOne();
-		printOne();
-	}
-}
